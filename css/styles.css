@@ -286,6 +286,33 @@ img {
   color: var(--secondary-text-color);
 }
 
+/* Clients */
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clients-list .link {
+  display: block;
+  padding: 16px 32px;
+  max-width: 170px;
+  max-height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  fill: #AFB1B8;
+}
+
+
+
+.clients-list .link:hover,
+.clients-list .link:focus {
+  border: 1px solid var(--accent-background-color);
+  fill: var(--accent-text-color);
+}
+
+
+
 /* FOOTER */
 .footer {
   padding: 60px 0px;
