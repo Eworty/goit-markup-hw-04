@@ -161,7 +161,7 @@ img {
 /* Hero selection */
 .hero {
   text-align: center;
-  padding: 200px;
+  padding: 200px 0px;
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
@@ -235,9 +235,14 @@ img {
 }
 
 .features-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+
   margin-bottom: 30px;
-  padding: 25px 100px;
   background-color: var(--tertiary-background-color);
+  border-radius: 4px;
 }
 
 .list-text {
@@ -318,7 +323,7 @@ img {
 }
 
 .link-list .list:hover,
-link-list .list:focus {
+.link-list .list:focus {
   background-color: var(--accent-background-color);
   border-radius: 50%;
   fill: var(--white-color)
@@ -334,8 +339,10 @@ link-list .list:focus {
 
 .clients-list .link {
   display: flex;
+  width: 170px;
+  height: 92px;
   align-items: center;
-  padding: 16px 32px;
+  justify-content: center;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   fill: var(--icon-color);
@@ -489,7 +496,6 @@ link-list .list:focus {
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  padding: 6px 25px;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
@@ -502,6 +508,8 @@ link-list .list:focus {
   border-radius: 4px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+
 
 .portfolio-list {
   display: flex;
@@ -545,4 +553,5 @@ link-list .list:focus {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }
